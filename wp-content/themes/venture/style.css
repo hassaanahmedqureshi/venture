@@ -104,7 +104,19 @@ header nav a:hover { color: #d4a574; }
 .error { color: #721c24; text-align: center; padding: 20px; background: #f8d7da; border: 1px solid #f5c6cb; margin-bottom: 25px; }
 
 /* Footer */
-footer { background: #1a1510; color: #d4a574; padding: 40px 0; text-align: center; border-top: 1px solid #d4a574; }
+footer { background: #1a1510; color: #d4a574; padding: 60px 0 30px; border-top: 1px solid #d4a574; }
+.footer-row-1 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; margin-bottom: 40px; padding-bottom: 30px; border-bottom: 1px solid rgba(212, 165, 116, 0.3); }
+.footer-col h4 { color: #f5f0e8; font-size: 18px; font-weight: 400; letter-spacing: 1px; margin-bottom: 15px; text-transform: uppercase; }
+.footer-col p { font-size: 14px; line-height: 1.8; font-family: Arial, sans-serif; }
+.footer-col nav { display: flex; flex-direction: column; gap: 10px; }
+.footer-col nav a { color: #d4a574; text-decoration: none; font-size: 14px; font-family: Arial, sans-serif; transition: color 0.3s; }
+.footer-col nav a:hover { color: #f5f0e8; }
+.btn-footer { display: inline-block; background: #d4a574; color: #2c2416; padding: 10px 25px; text-decoration: none; border: 2px solid #d4a574; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; transition: all 0.3s; font-family: Arial, sans-serif; margin-top: 10px; }
+.btn-footer:hover { background: transparent; color: #d4a574; }
+.footer-row-2 { text-align: center; }
+.footer-row-2 p { font-size: 12px; line-height: 1.6; font-family: Arial, sans-serif; color: #8b7d6f; }
+.footer-row-2 a { color: #d4a574; text-decoration: none; }
+.footer-row-2 a:hover { color: #f5f0e8; }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
@@ -117,6 +129,7 @@ footer { background: #1a1510; color: #d4a574; padding: 40px 0; text-align: cente
     .hero h1 { font-size: 36px; }
     .hero p { font-size: 16px; }
     .collection-grid, .features-grid, .values-grid { grid-template-columns: 1fr; }
+    .footer-row-1 { grid-template-columns: 1fr; gap: 30px; }
     .value-row, .value-reverse { grid-template-columns: 1fr !important; }
     .value-image { min-height: 250px; }
     .value-reverse .value-image { order: 1; }
