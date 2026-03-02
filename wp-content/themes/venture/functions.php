@@ -10,6 +10,7 @@ add_action('after_setup_theme', 'venture_setup');
 
 function venture_styles() {
     wp_enqueue_style('venture-style', get_stylesheet_uri());
+    wp_enqueue_script('venture-slider', get_template_directory_uri() . '/assets/slider.js', array(), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'venture_styles');
 
@@ -86,6 +87,20 @@ function venture_customize_register($wp_customize) {
         $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, $service . '_image', array(
             'label' => ucfirst($service) . ' Image',
             'section' => 'services_images',
+        )));
+    }
+    
+    // Showcase Slider Images
+    $wp_customize->add_section('showcase_images', array(
+        'title' => 'Showcase Slider',
+        'priority' => 34,
+    ));
+    
+    for($i = 1; $i <= 4; $i++) {
+        $wp_customize->add_setting('showcase_' . $i . '_image');
+        $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'showcase_' . $i . '_image', array(
+            'label' => 'Showcase Image ' . $i,
+            'section' => 'showcase_images',
         )));
     }
 }

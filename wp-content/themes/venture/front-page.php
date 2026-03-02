@@ -10,6 +10,28 @@
         </div>
     </section>
 
+    <!-- Showcase Section -->
+    <section class="showcase">
+        <div class="container">
+            <div class="showcase-grid">
+                <div class="showcase-slider">
+                    <div class="slider-container">
+                        <div class="slide active" style="background-image: url('<?php echo get_theme_mod('showcase_1_image') ? esc_url(get_theme_mod('showcase_1_image')) : 'https://via.placeholder.com/600x700/d4a574/ffffff?text=Slide+1'; ?>')"></div>
+                        <div class="slide" style="background-image: url('<?php echo get_theme_mod('showcase_2_image') ? esc_url(get_theme_mod('showcase_2_image')) : 'https://via.placeholder.com/600x700/b8915f/ffffff?text=Slide+2'; ?>')"></div>
+                        <div class="slide" style="background-image: url('<?php echo get_theme_mod('showcase_3_image') ? esc_url(get_theme_mod('showcase_3_image')) : 'https://via.placeholder.com/600x700/9a7a4f/ffffff?text=Slide+3'; ?>')"></div>
+                        <div class="slide" style="background-image: url('<?php echo get_theme_mod('showcase_4_image') ? esc_url(get_theme_mod('showcase_4_image')) : 'https://via.placeholder.com/600x700/7d6340/ffffff?text=Slide+4'; ?>')"></div>
+                    </div>
+                </div>
+                <div class="showcase-content">
+                    <h2>Venture is Comfort & Style</h2>
+                    <p>Premium Clothing Made with Excellence</p>
+                    <p>Our garments are designed to deliver an unmistakable style to your wardrobe, without compromising on fabric quality and craftsmanship. Each piece is carefully selected to ensure lasting comfort and timeless elegance.</p>
+                    <p class="showcase-tagline">We believe in quality craftsmanship. Do you?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Featured Collections -->
     <section class="collections" id="shop">
         <div class="container">
