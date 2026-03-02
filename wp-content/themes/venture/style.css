@@ -173,7 +173,7 @@ footer { background: #1a1510; color: #d4a574; padding: 60px 0 30px; border-top: 
     .value-reverse .value-image { order: 1; }
     .value-reverse .value-content { order: 2; }
     .feature { grid-template-columns: 1fr !important; }
-    .feature-icon { margin: 0 auto; }
+    .feature-icon { margin: 0 auto 20px; order: -1 !important; }
     .newsletter input { width: 100%; }
     .newsletter form { flex-direction: column; align-items: center; }
 }
