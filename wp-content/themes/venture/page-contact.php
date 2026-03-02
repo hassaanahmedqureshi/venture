@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php /* Template Name: Contact */ ?>
 <main>
-    <section class="page-header">
+    <section class="page-header page-header-pattern">
         <div class="container">
             <h1>Contact Us</h1>
         </div>
