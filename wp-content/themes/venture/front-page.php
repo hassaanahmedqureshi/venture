@@ -4,7 +4,7 @@
     <!-- Hero Section -->
     <section class="hero" <?php if(get_theme_mod('hero_image')): ?>style="background-image: linear-gradient(rgba(44, 36, 22, 0.6), rgba(44, 36, 22, 0.6)), url('<?php echo esc_url(get_theme_mod('hero_image')); ?>'); background-size: cover; background-position: center;"<?php endif; ?>>
         <div class="container">
-            <h1>Ready for Your Venture?</h1>
+            <h1>Start Your Venture</h1>
             <p>A little outside the box, just like you.<br>High-quality clothing without compromising your personality.</p>
             <a href="#shop" class="btn" onclick="event.preventDefault(); document.querySelector('.collections').scrollIntoView({behavior: 'smooth'});">Shop Now</a>
         </div>
