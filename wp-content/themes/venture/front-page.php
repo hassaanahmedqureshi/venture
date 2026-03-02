@@ -49,16 +49,25 @@
             <h2>Why Choose Venture</h2>
             <div class="features-grid">
                 <div class="feature">
-                    <h3>Quality Fabrics</h3>
-                    <p>Premium materials for lasting comfort</p>
+                    <div class="feature-content">
+                        <h3>Quality Fabrics</h3>
+                        <p>Premium materials for lasting comfort. Every piece is carefully crafted with attention to detail and durability.</p>
+                    </div>
+                    <div class="feature-icon">✦</div>
                 </div>
                 <div class="feature">
-                    <h3>Free Shipping</h3>
-                    <p>On orders over $50</p>
+                    <div class="feature-content">
+                        <h3>Free Shipping</h3>
+                        <p>Enjoy complimentary shipping on all orders over $50. Fast delivery to your doorstep with tracking.</p>
+                    </div>
+                    <div class="feature-icon">✈</div>
                 </div>
                 <div class="feature">
-                    <h3>Easy Returns</h3>
-                    <p>30-day hassle-free returns</p>
+                    <div class="feature-content">
+                        <h3>Easy Returns</h3>
+                        <p>30-day hassle-free returns policy. Not satisfied? We'll make it right with no questions asked.</p>
+                    </div>
+                    <div class="feature-icon">↻</div>
                 </div>
             </div>
         </div>
