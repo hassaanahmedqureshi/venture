@@ -73,6 +73,21 @@ function venture_customize_register($wp_customize) {
             'section' => 'values_images',
         )));
     }
+    
+    // Services Images
+    $wp_customize->add_section('services_images', array(
+        'title' => 'Services Images',
+        'priority' => 33,
+    ));
+    
+    $services = array('styling', 'tailoring', 'corporate', 'gift', 'consultation', 'alterations');
+    foreach($services as $service) {
+        $wp_customize->add_setting($service . '_image');
+        $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, $service . '_image', array(
+            'label' => ucfirst($service) . ' Image',
+            'section' => 'services_images',
+        )));
+    }
 }
 add_action('customize_register', 'venture_customize_register');
 
