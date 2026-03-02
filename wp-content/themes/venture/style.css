@@ -15,7 +15,8 @@ body { font-family: 'Georgia', serif; line-height: 1.8; color: #2c2416; backgrou
 header { background: #2c2416; color: #f5f0e8; padding: 20px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
 header .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
 header h1 { font-size: 28px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; }
-header h1 a { color: #d4a574; text-decoration: none; }
+header h1 a { color: #d4a574; text-decoration: none; display: block; }
+.site-logo { height: 50px; width: auto; display: block; }
 header nav ul { display: flex; list-style: none; gap: 40px; }
 header nav a { color: #f5f0e8; text-decoration: none; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; transition: color 0.3s; }
 header nav a:hover { color: #d4a574; }
